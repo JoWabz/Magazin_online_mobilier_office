@@ -1,0 +1,130 @@
+ /* p {
+    color: var(--culoare1);
+    background-color: var(--culoare-background-standard);
+    
+} */
+
+/* p.intro{
+    background-color: rgb(182, 214, 243, 0.5);
+    position:fixed;
+    width: 50vw;
+    height: 50vh;
+    top:10px;
+    left:10px;
+} */
+
+p.math1{
+    border: 1px solid var(--culoare_border);
+}
+
+li{
+    color: var(--culoare1);
+}
+
+h2{
+    border: 2px solid #5170ED;
+}
+
+a {
+    
+}
+img.antet{
+    width:80vw;
+    height:30vh;
+    margin-right: 5%;
+
+}
+#tab-inaltimi th, #tab-inaltimi td{
+    border: 1px solid black;
+    padding:5px;
+}
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 17px;
+    }
+    
+    body{
+
+        --dim-spatiere:100px;
+        --dimensiune-gap:10px;
+        
+    }
+    #grid-pagina{
+        /* display: grid;
+        gap: var(--dimensiune-gap);
+        padding: 20px; */
+        grid-template-areas: "welcome welcome"
+                            "fig2 fig1"
+                            "faq resurse"
+                            "fig3 promotii"
+                            "produse produse" ;
+    
+    }
+    #container-tabel{
+        overflow-x:auto;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    html{
+        font-size: 12px;
+    }
+    
+    body{
+
+        --dim-spatiere:50px;
+        --dimensiune-gap:5px;
+    }
+    #grid-pagina{
+        display: block;
+    }
+    #container-tabel{
+        overflow-x:auto;
+    }
+    
+
+}
+/* #container-tabel{
+    overflow-x:auto;
+} */
+
+.container-iframe{
+    display: flex;
+    flex-direction:column-reverse;
+
+}
+.container-iframe>*{
+    border: 1px solid blue;
+}
+.taburi-iframe{
+    width: 700px;
+    display: flex;
+    justify-content:space-between;
+    
+}
+.taburi-iframe>a{
+    display:block;
+    border: 5px double var(--culoare_highlight);
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    line-height: 20px;
+    box-shadow:5px 5px 25px 5px var(--culoare_highlight) inset;
+    padding: 2px;
+    margin: 5px;
+    text-decoration: none;
+    transition: all 1s linear;
+    color: var(--culoare_highlight);
+    
+}
+.container-iframe iframe, .taburi-iframe {
+    width:100%;
+}
+
+.taburi-iframe>a:hover{
+    transition: all 1s linear;
+    box-shadow: none;
+}

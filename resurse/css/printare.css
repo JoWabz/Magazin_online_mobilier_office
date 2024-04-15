@@ -1,0 +1,150 @@
+#watermark,#absolut{
+    display:none;
+}
+#grid-pag {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 5px;
+    padding:10px;
+}
+.celula {
+    background-color: lightblue;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+@media print {
+
+#absolut{
+    position: absolute;
+    display: inline-block;    
+    top:0%;
+    width:80vw;
+    height:20px;
+    /* right:50px; */
+    overflow: visible;
+   
+}
+#absolut::after{
+    content:"Acesta este un proiect scolar. Element poziționat absolut pe prima.Pentru a vedea stilul de printare apăsați Ctrl+P.";
+    position: absolute;
+    font-size:10px;
+
+    /* right:10px; */
+    left: 60px;
+    border:5px dotted black;
+    width:80vw;
+    height:35px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+img,video,iframe{
+    display: none;
+}
+
+#link-top{
+    display: none;
+}
+.container-iframe{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+
+
+h1{
+    page-break-after: always;
+    margin-top: 50%;
+    text-align:center;
+    margin-left:1cm;
+    text-decoration: underline;
+    font-size: 2.5rem;
+    vertical-align: middle;
+    margin-top: 70%;
+}
+#grid-pag{
+    font-size: 10px;
+    box-sizing:border-box;
+    page-break-before:always;
+    background-color: white;
+    /*
+        grid-template-rows: calc(100vh - 10px) 100vh 100vh 100vh;*/
+
+    display:block;
+    }
+    html, body {
+    width: 210mm;
+    /* height: 297mm; */
+    /*height: 282mm;*/
+            overflow:visible !important;
+    }
+
+/*#lst li{
+    page-break-before: always;
+}*/
+
+#grid-pag div:nth-child(5){
+    
+    page-break-before:always;
+}
+
+
+    #watermark
+    {
+        display: block;
+        position: fixed;/*apare pe toate paginile*/
+        bottom:10px;
+        color:rgba(0,0,0,0.4);
+        right:10px;
+    }
+    #watermark::after{
+        
+        opacity:0.65;
+        padding:5px;
+        display: block;
+        background: white;
+        border:2px double black;
+        border-top-left-radius:10px;
+        border-bottom-left-radius:10px;
+        /* border-right:none; */
+        width:100px;
+        height: 2cm;
+        content:"Copyright Ioana Cordunianu";
+    }
+
+#end{
+    page-break-before: always;
+}
+}
+
+@page {
+    size: A4 portrait;
+    margin-bottom:2cm;
+    margin-top:2cm;
+    counter-increment: page;
+        
+}
+@page:left{
+
+    margin-left:2.5cm;
+    margin-right:0.5cm;
+    border-radius: 20cm;
+}
+@page:right{
+
+    margin-right:2.5cm;
+    margin-left:0.5cm;
+}
+
+
+

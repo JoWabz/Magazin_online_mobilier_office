@@ -1,0 +1,129 @@
+/* fisier pentru cromatica */
+
+html{
+    font-size: 17px;
+    transition: all 0.4s linear;
+}
+
+body{
+    --culoare1:#383543;
+    --culoare_text: #0C1F33;
+    --culoare_background:#6391C3;
+    --culoare_border:#5C656E;
+    --culoare_highlight:#519CED;
+    --culoare_background_standard: white;
+    --dim-spatiere: 150px;
+    --culoare-link-hover: #4E97E5;
+    --culoare-link-clicked: #376AA1;
+    --dimensiune-gap:10px;
+    --culoare_text_tabel:rgb(203, 218, 230);
+
+    --culoare-c1:#3771A1;
+    --culoare-c2:#4EA1E6;
+
+    --culoare1:#62a8ca;
+    --culoare-inchisa: violet;
+    --culoare-deschisa: rgb(237, 210, 239);
+    --culoare-text-meniu-selectat: white;
+    --dim-spatiere: 50px;
+    padding-left: var(--dim-spatiere);
+    padding-right: var(--dim-spatiere);
+
+    
+    margin: 0px;
+  
+
+    padding-left: var(--dim-spatiere);
+    padding-right: var(--dim-spatiere);
+
+    transition: all 0.4s linear;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#tab-inaltimi th, #tab-inaltimi td{
+    border: 1px solid black;
+    padding:5px;
+    transition: all 0.75s linear;
+}
+#tab-inaltimi{
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 5px solid var(--culoare_border); 
+
+}
+
+#tab-inaltimi td:nth-child(2n+1), #tab-inaltimi th:nth-child(2n+1) {
+    color: var(--culoare-c2);
+}
+
+#tab-inaltimi td:nth-child(2n+1):hover, #tab-inaltimi th:nth-child(2n+1):hover {
+    color: white;
+}
+
+#tab-inaltimi td:nth-child(2n),#tab-inaltimi th:nth-child(2n) {
+    color: var(--culoare-c1);
+}
+
+#tab-inaltimi td:nth-child(2n):hover,#tab-inaltimi th:nth-child(2n):hover {
+    color: white;
+}
+
+/* #tab-inaltimi tr{
+    transition: all 1.75 linear;
+} */
+
+#tab-inaltimi tr:hover, #tab-inaltimi td:hover{
+    background-color: var(--culoare_background);
+    color: white;
+    text-decoration: none;
+    transition: all 0.75s linear;
+    border-top: 5px;
+}
+/* #container-tabel{
+    overflow:hidden;
+} */
+
+#link-top{
+    position: fixed;
+    bottom:2.3em;
+    opacity:0.4;
+    left:1.5em;
+    width:2.1rem;
+    box-sizing: border-box;
+    height:2.1rem;
+    line-height: 1rem;
+    text-align: center;
+    border: 3px solid grey;
+    background: rgb(255,255,255); 
+    transform: rotate(47deg);
+    
+
+}
+#link-top:hover{
+    opacity: 1;
+    background-color: lightgray;
+
+}
+#triunghi{
+    
+    height:0px;
+    width: 0px;
+    display:inline-block;
+    border-bottom:1.5rem solid rgb(31, 30, 30);
+    border-radius: 50%;
+    border-top: 0.1rem solid transparent;
+    border-left: 0.9rem solid transparent;
+    border-right: 0.9rem solid transparent;
+    vertical-align: bottom;
+    transform: rotate(-44deg);
+    opacity: 1;
+    transition: all 0.4s linear;
+}
+#link-top:hover #triunghi{ /*cand trecem cu mouse-ul pe triunghi */
+    border-color: white;
+    border-top: 0.1rem solid transparent;
+    border-left: 0.9rem solid transparent;
+    border-right: 0.9rem solid transparent;
+    
+}

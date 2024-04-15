@@ -1,0 +1,53 @@
+/* pentru grid */
+#grid-pagina{
+    display: grid;
+    gap: var(--dimensiune-gap);
+    padding: 20px;
+    grid-template-areas: "welcome welcome welcome welcome"
+                        "fig2 fig1 fig1 fig3"
+                        "faq resurse resurse resurse"
+                        "promotii resurse resurse resurse"
+                        "produse produse produse produse" ;
+
+}
+#grid-pagina>*{
+    outline: 2px solid var(--culoare_border);
+    padding: 20px;
+} 
+
+#fig1, #fig2, #fig3{
+    margin: 0px;
+}
+
+
+
+#welcome{
+    grid-area:welcome;
+}
+#anunturi{
+    grid-area:anunturi;
+}
+#resurse{
+    grid-area:resurse;
+}
+#promotii{
+    grid-area:promotii;
+}
+#fig1{
+    grid-area:fig1;
+}
+#fig2{
+    grid-area:fig2;
+}
+#fig3{
+    grid-area:fig3;
+}
+#produse{
+    grid-area:produse;
+}
+#faq{
+    grid-area:faq;
+}
+#calculator{
+    grid-area:calculator;
+}
