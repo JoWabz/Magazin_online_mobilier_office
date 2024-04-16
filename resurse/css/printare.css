@@ -61,6 +61,10 @@ a{
 }
 
 
+nav>ul {
+    list-style: none;
+    list-style-type: none;
+}
 
 h1{
     page-break-after: always;
