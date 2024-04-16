@@ -31,7 +31,9 @@ a {
 img.antet{
     width:80vw;
     height:30vh;
-    margin-right: 5%;
+    display: inline-block;
+    align-content: center;
+    /* margin-right: 5%; */
 
 }
 #tab-inaltimi th, #tab-inaltimi td{
@@ -98,7 +100,7 @@ img.antet{
     border: 1px solid blue;
 }
 .taburi-iframe{
-    width: 700px;
+    width: 600px;
     display: flex;
     justify-content:space-between;
     
