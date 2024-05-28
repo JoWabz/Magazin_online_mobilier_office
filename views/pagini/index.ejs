@@ -2,19 +2,71 @@
 <html lang="ro"> 
     <head>
         <%- include("../fragmente/head.ejs"); %>
+
+        <title>Mobilier office Semob </title>
         
         <meta name="keywords" content="mobilier,mobila office, mobila de birou, accesorii de birou, mobila second, standing desk, birou, scaun ergonomic, scaun birou,
          birou reglabil, birou reglabil electric, rollbox, cabinet cu rotile, birou work from home, birou stat in picioare, 
          birou electric"><!--cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
         <meta name="description" content="Mobilier second hand de calitate pentru birouri. Birouri reglabile electric. Birouri ergonomice. Import Suedia. Livrare rapida in toata tara"><!-- descrierea paginii, adesea apare sub link când sunt afișate rezultatele căutării -->
-        <title>Mobilier office Semob </title>
+        
     </head>
     <body>
-        <%- include("../fragmente/header.ejs"); %>
+        <header>
+            <h1>Mobilier office Suedia</h1>
+            <p id="watermark"></p>
+            
+        </header>
+        <nav id="meniu">
+            
+            <label id="hamburger" for="ch-menu">
+                <img src="resurse/imagini/Hamburger_icon_alb.png" alt="menu">
+                
+            </label>
+            
+            
+            <input id="ch-menu" type="checkbox">
+            <ul class="meniu">
+                <li><div id="acasa-mediu"><span class="fa-solid fa-house"></span><div id="acas">Acasa</div></div>
+                    <!-- <div id="acasa">Acasa</div> -->
+                    <ul>
+                        <li><a href="#welcome">Bine ati venit</a></li>
+                        <li><a href="#promotii">Promotii</a></li>
+                        <li><a href="#anunturi">Anunturi</a></li>
+                        <li><a href="#produse">Oferta</a></li>
+                        <li><a href="#orar">Orar</a></li>
+                        <li><a href="#index-intrebari">Întrebări</a></li>
+                        <li><a href="#retete">Rețete</a></li>
+                    </ul>
+                
+                
+                </li>
+                <li><a href="#">Inregistrare</a></li>
+                <li><div>Despre</div>
+                    <ul>                        
+                        <li><a href="despre.html#prezentare">Prezentare</a></li>
+                        <li><a href="despre.html#istoric">Istoric</a></li>
+                        <li><a href="despre.html#motivatie">Motivatie</a></li>
+                        <li><a href="despre.html#galerie">Galerie</a></li>
+                    </ul>
+                </li>
+                <li><div>Produse</div>
+                    <ul>
+                        <li><a href="http://www.google.com">Toate</a></li>
+                        <li><a href="#">Prajituri</a></li>
+                        <li><a href="#">Torturi</a></li>
+                        <li><a href="#">Patiserie</a></li>
+                    </ul>
+                
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
         <main>
             <div id="grid-pagina">
                 <section id="welcome">
-                    <img src="resurse/imagini/antet/antet1.png" class="antet">
+                    <!-- <img src="resurse/imagini/antet/antet1.png" class="antet"> -->
                     <h2>Bine ati venit</h2>
                     
                     <article>
@@ -448,9 +500,10 @@
 
         <%- include("../fragmente/footer.ejs"); %>
 
+
         <div id="absolut"></div>    
     </body>
-    
+
 
 
 </html>
