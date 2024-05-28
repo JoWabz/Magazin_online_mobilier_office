@@ -1,0 +1,34 @@
+
+.meniu {
+    display: flex;
+    list-style-type: none; 
+    background-color: var(--culoare-c2);
+
+
+    li{
+        border: 1px solid var(--culoare-c1);
+        font-weight: bold;
+        height: var(--inaltime-meniu);
+        width: var(--latime-buton);
+        text-align: center;
+        box-sizing: border-box;
+        transition: all 1s linear;
+    }
+    a, div{
+        text-decoration: none;
+        color: var(--culoare-text-meniu);
+        display: block;
+        height: 100%;
+        line-height: var(--inaltime-meniu);
+        cursor: pointer;
+        box-sizing: border-box;
+        transition: all 1s linear;
+    }
+    &:hover{
+        background-color: var(--culoare-c2);
+        >a, > div{
+            color: var(--culoare-text-meniu-selectat);
+        }
+    }
+
+}

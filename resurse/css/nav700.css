@@ -7,6 +7,7 @@
 #hamburger>img{
     height:var(--inaltime-meniu);
     display:block;
+    background-color: var(--culoare-c2);
 }
 /* implicit meniul e ascuns*/
 ul.meniu{
@@ -15,7 +16,7 @@ ul.meniu{
     width: 100%;
 }
 
-/*aici facem vizibil meniul cand facem click pe hamburher menu*/
+/*aici facem vizibil meniul cand facem click pe hamburger menu*/
 #ch-menu:checked+ul.meniu{
     display:block;
     z-index: 2;
@@ -26,14 +27,15 @@ ul.meniu{
     animation-duration: 0.7s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-}
+    /* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%); */
+}   
 #ch-menu:checked+ul.meniu>li>div,#ch-menu:checked+ul.meniu>li>a{
     z-index: 2;
     position: relative;
     transform-origin: 50% 50%;
     animation-name: aparitie_meniu_p_btn;
     animation-iteration-count: 1;
-    animation-duration: 0.7s;
+    animation-duration: 2.7s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
@@ -46,7 +48,8 @@ nav ul.meniu>li ul{
     position: absolute;
     width: 100%;
     z-index: 200;
-    transform: scale(1,1);
+    transform: scale(1,1) !important;
+      opacity: 1 !important;
 }
 
 #ch-menu:checked+ul.meniu>li ul>*{
@@ -61,12 +64,28 @@ nav ul.meniu>li:hover>ul{
 
 /*pentru fiecare element din submeniu generam un triunghiulet alb in fata lui*/
 nav ul.meniu>li li a :before{
-    content: " \25B7\00A0   ";
+    content: "U+25B7";
     color: white;
 }
 
 @keyframes aparitie_meniu_p{
     0%{
         opacity: 0;
+        transform: scale(0,0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}
+
+@keyframes aparitie_meniu_p_btn{
+    0%{
+        /* opacity: 0; */
+        transform: scale(0,0);
+    }
+    100%{
+        /* opacity: 1; */
+        transform: scale(1,1);
     }
 }

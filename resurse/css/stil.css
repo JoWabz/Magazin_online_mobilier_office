@@ -29,7 +29,7 @@ a {
     
 }
 img.antet{
-    width:80vw;
+    width:80%;
     height:30vh;
     display: inline-block;
     align-content: center;
@@ -52,8 +52,8 @@ img.antet{
         
     }
     #grid-pagina{
-        /* display: grid;
-        gap: var(--dimensiune-gap);
+        display: grid;
+        /*gap: var(--dimensiune-gap);
         padding: 20px; */
         grid-template-areas: "welcome welcome"
                             "fig2 fig1"

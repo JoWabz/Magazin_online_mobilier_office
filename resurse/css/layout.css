@@ -3,7 +3,8 @@
     display: grid;
     gap: var(--dimensiune-gap);
     padding: 50px;
-    grid-template-areas: "welcome welcome welcome welcome"
+    grid-template-areas: /*"meniu meniu meniu meniu"*/
+                        "welcome welcome welcome welcome"
                         "fig2 fig1 fig1 fig3"
                         "faq resurse resurse resurse"
                         "promotii resurse resurse resurse"
@@ -11,7 +12,7 @@
 
 }
 #grid-pagina>*{
-    outline: 2px solid var(--culoare_border);
+    border: 2px solid var(--culoare_border);
     padding: 20px;
 } 
 
@@ -20,6 +21,9 @@
 }
 
 
+/* #meniu {
+    grid-area: meniu;
+} */
 
 #welcome{
     grid-area:welcome;

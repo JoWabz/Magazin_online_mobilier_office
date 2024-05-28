@@ -1,0 +1,32 @@
+.meniu {
+  display: flex;
+  list-style-type: none;
+  background-color: var(--culoare-c2);
+}
+.meniu li {
+  border: 1px solid var(--culoare-c1);
+  font-weight: bold;
+  height: var(--inaltime-meniu);
+  width: var(--latime-buton);
+  text-align: center;
+  box-sizing: border-box;
+  transition: all 1s linear;
+}
+.meniu a, .meniu div {
+  text-decoration: none;
+  color: var(--culoare-text-meniu);
+  display: block;
+  height: 100%;
+  line-height: var(--inaltime-meniu);
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 1s linear;
+}
+.meniu:hover {
+  background-color: var(--culoare-c2);
+}
+.meniu:hover > a, .meniu:hover > div {
+  color: var(--culoare-text-meniu-selectat);
+}
+
+/*# sourceMappingURL=nav.css.map */

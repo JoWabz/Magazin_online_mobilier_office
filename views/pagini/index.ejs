@@ -1,103 +1,20 @@
 <!DOCTYPE html>
 <html lang="ro"> 
     <head>
-        <title>Mobilier office Semob </title>
-        <meta charset="UTF-8"><!-- codificarea in memorie a caracterelor-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <%- include("../fragmente/head.ejs"); %>
+        
         <meta name="keywords" content="mobilier,mobila office, mobila de birou, accesorii de birou, mobila second, standing desk, birou, scaun ergonomic, scaun birou,
          birou reglabil, birou reglabil electric, rollbox, cabinet cu rotile, birou work from home, birou stat in picioare, 
          birou electric"><!--cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
         <meta name="description" content="Mobilier second hand de calitate pentru birouri. Birouri reglabile electric. Birouri ergonomice. Import Suedia. Livrare rapida in toata tara"><!-- descrierea paginii, adesea apare sub link când sunt afișate rezultatele căutării -->
-        <meta name="author" content="Semob 2024">
-    
-        <link rel="apple-touch-icon" sizes="180x180" href="./resurse/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./resurse/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./resurse/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./resurse/favicon/site.webmanifest">
-        <link rel="mask-icon" href="./resurse/favicon/safari-pinned-tab.svg" color="#848ade">
-        <link rel="shortcut icon" href="./resurse/favicon/favicon.ico">
-        <meta name="msapplication-TileColor" content="#848ade">
-        <meta name="msapplication-config" content="./resurse/favicon/browserconfig.xml">
-        <meta name="theme-color" content="#d57373">
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-
-
-        <link rel="stylesheet" href="resurse/css/general.css" type="text/css" />
-        <link rel="stylesheet" href="resurse/css/general1000.css" type="text/css" media="screen and (max-width:1000px)"/>
-        <link rel="stylesheet" href="resurse/css/general700.css" type="text/css" media="screen and (max-width:700px)"/>
-  
-        <link rel="stylesheet" href="resurse/css/layout.css" type="text/css" />
-        
-        <link rel="stylesheet" href="resurse/css/nav.css" type="text/css" />
-        
-        <link rel="stylesheet" href="resurse/css/nav1000.css" type="text/css" media="screen and (max-width:1000px)"/>
-        
-        <link rel="stylesheet" href="resurse/css/nav700.css" type="text/css" media="screen and (max-width:700px)"/>
-
-        <link rel="stylesheet" href="resurse/css/stil.css" type="text/css" />
-        <link rel="stylesheet" href="resurse/css/printare.css" type="text/css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anta&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-        
+        <title>Mobilier office Semob </title>
     </head>
     <body>
-        <header>
-            <h1>Mobilier office Suedia</h1>
-            <p id="watermark"></p>
-            
-        </header>
-        <nav id="meniu">
-            
-            <label id="hamburger" for="ch-menu">
-                <img src="resurse/imagini/Hamburger_icon_alb.png" alt="menu">
-                
-            </label>
-            
-            
-            <input id="ch-menu" type="checkbox">
-            <ul class="meniu">
-                <li><div id="acasa-mediu"><span class="fa-solid fa-house"></span><div id="acas">Acasa</div></div>
-                    <!-- <div id="acasa">Acasa</div> -->
-                    <ul>
-                        <li><a href="#welcome">Bine ati venit</a></li>
-                        <li><a href="#promotii">Promotii</a></li>
-                        <li><a href="#anunturi">Anunturi</a></li>
-                        <li><a href="#produse">Oferta</a></li>
-                        <li><a href="#orar">Orar</a></li>
-                        <li><a href="#index-intrebari">Întrebări</a></li>
-                        <li><a href="#retete">Rețete</a></li>
-                    </ul>
-                
-                
-                </li>
-                <li><a href="#">Inregistrare</a></li>
-                <li><div>Despre</div>
-                    <ul>                        
-                        <li><a href="despre.html#prezentare">Prezentare</a></li>
-                        <li><a href="despre.html#istoric">Istoric</a></li>
-                        <li><a href="despre.html#motivatie">Motivatie</a></li>
-                        <li><a href="despre.html#galerie">Galerie</a></li>
-                    </ul>
-                </li>
-                <li><div>Produse</div>
-                    <ul>
-                        <li><a href="http://www.google.com">Toate</a></li>
-                        <li><a href="#">Prajituri</a></li>
-                        <li><a href="#">Torturi</a></li>
-                        <li><a href="#">Patiserie</a></li>
-                    </ul>
-                
-                </li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
+        <%- include("../fragmente/header.ejs"); %>
         <main>
             <div id="grid-pagina">
                 <section id="welcome">
-                    <!-- <img src="resurse/imagini/antet/antet1.png" class="antet"> -->
+                    <img src="resurse/imagini/antet/antet1.png" class="antet">
                     <h2>Bine ati venit</h2>
                     
                     <article>
@@ -529,26 +446,11 @@
         
         </main>
 
-        <footer>
-            <a href="#" id="link-top"><div id="triunghi"></div></a>
-            
-            <address>
-                <a href="https://www.google.com/maps/place/Rovaniemi,+Finland/@66.6644309,24.7131434,8z/data=!3m1!4b1!4m6!3m5!1s0x442b4bbd76772553:0x158088adb48841c4!8m2!3d66.5039478!4d25.7293906!16zL20vMDE1bmIw?entry=ttu"><i class="fa-solid fa-map-location"></i></a>Strada Biroului nr. 4, Bucuresti, sector 6, Romania</a><br>
-                <i class="fa-solid fa-mobile-screen-button"></i><a href="tel:+407553972677">Telefon</a><br>
-                <i class="fa-solid fa-envelope"></i><a href="mailto:semob@gmail.com">E-mail</a><br>
-                <a href="https://wa.me/1xxxxxxxxx">Whatsapp</a><br>
-                
-                 <!-- width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-                
-            </address>
-
-            <small>Copyright &copy; semob.ro <time datetime="2024-04-12 20:00"></time></small>
-            <p id="watermark"></p>
-        </footer>
+        <%- include("../fragmente/footer.ejs"); %>
 
         <div id="absolut"></div>    
     </body>
-
+    
 
 
 </html>
