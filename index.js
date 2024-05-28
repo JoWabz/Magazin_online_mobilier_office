@@ -39,6 +39,10 @@ app.get("/", function (req, res){
 //     res.send("Nu stiu")
 // })
 
+app.get("/test", function(req, res){
+    res.render("pagini/test")
+})
+
 app.get("/suma/:a/:b", function (req, res){
     res.write(parseInt(req.params.a)+parseInt(req.params.b)+ "");
     res.end()
