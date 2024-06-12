@@ -1,0 +1,69 @@
+<section id="galerie-statica">
+    <h2>Galerie</h2>
+    <div>
+        <% 
+            var vLuni=["ianuarie", "februarie", "martie", "aprilie", "iunie", "iulie"];
+            var d=new Date();
+            var lunaCurenta=vLuni[d.getMonth()];
+            for (let imag of locals.imagini) { 
+                if (imag?.luni?.includes(lunaCurenta)) {
+                %>
+                    <figure>
+                        <picture>
+                            <source srcset="<%= imagini/mediu %>" media="(max-width:1200px)"/>
+                            <img src="<%= imag.fisier %>" alt="prajituri">
+                        </picture>
+                    
+                    <figcaption><%= imag.descriere%></figcaption>
+                    </figure>
+            <% } %>
+        <% } %>
+    <div id="gr">
+        <figure>
+            <img src="/resurse/imagini/galerie/briose-frisca.png" alt="briosele">
+            <figcaption>Cos cu briose</figcaption>
+        </figure>
+        <figure>
+
+        </figure>
+        <figure>
+            <img src="/resurse/imagini/galerie/clatite.png" alt="briosele">
+            <figcaption>Clatite</figcaption>
+        </figure>
+
+        <figure>
+
+        </figure>
+
+        <figure>
+            <img src="/resurse/imagini/galerie/gogosi.png" alt="briosele">
+            <figcaption>Gogosi</figcaption>
+        </figure>
+
+        <figure>
+
+        </figure>    
+        <figure>
+            <img src="/resurse/imagini/galerie/prajitura-ciocolata.png" alt="briosele">
+            <figcaption>Praji cioco</figcaption>
+        </figure>
+
+        <figure>
+
+        </figure>
+
+        <figure>
+            <img src="/resurse/imagini/galerie/tarta-afine.png" alt="briosele">
+            <figcaption>Tarta afine</figcaption>
+        </figure>
+        <figure>
+
+        </figure>
+        <figure>
+            <img src="/resurse/imagini/galerie/tort-trandafiri.png" alt="briosele">
+            <figcaption>Tort trandafiri</figcaption>
+        </figure>
+        <figure></figure>
+    </div>
+    </div>
+</section>

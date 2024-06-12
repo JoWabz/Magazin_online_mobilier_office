@@ -1,0 +1,16 @@
+  ::cue{
+    background: blue;
+    font-style:italic;
+    color: white;
+  }
+
+  WEBVTT - mesaj_ro
+
+  00:00:000 --> 00:03.000 align:start
+  un birou frumos
+
+  00:03.000 --> 00.07.000 line:0
+  inaltime minima: 650 mm 
+
+  00:07:000 --> 00:14.000 position:50% size:25%
+  inaltime maxima de ridicare 1200 mm

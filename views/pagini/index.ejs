@@ -19,6 +19,10 @@
                 <section id="welcome">
                     <!-- <img src="resurse/imagini/antet/antet1.png" class="antet"> -->
                     <h2>Bine ati venit</h2>
+                    <p>
+                        <%- locals.ip %>
+                        
+                    </p>
                     
                     <article>
                         <h3>Redescopera valoarea: beneficiile achiziționării de <b>mobilier de birou uzat</b></h3>
@@ -138,6 +142,8 @@
                     </ol>
                     </article>
                 </section>
+
+                
                 <section id="resurse">
                     <h2>Care este inaltimea potrivita pentru biroul reglabil?</h2>
                     <div id="container-tabel">
@@ -379,6 +385,7 @@
                         </mrow>
                     </math>
                 </section>
+                <!-- <hr class="stylized-hr"> -->
                 <section id="promotii">
                     <h2>Promotii</h2>
                     <article>
@@ -401,24 +408,24 @@
                                
                 </section>
                 <figure id="fig1" class="fg-img">
-                    <img src="resurse/imagini/birouri/birou_tip_1/birou_tip1_1.png" alt="briose">
+                    <img src="/resurse/imagini/birouri/birou_tip_1/birou_tip1_1.png" alt="briose">
                     <figcaption>Birou reglabil electric</figcaption>
                 </figure>
                 <figure id="fig2" class="fg-img">
-                    <img src="resurse/imagini/organizatoare/rollbox/rollbox_tip1/rollbox1_1.png" alt="briose">
+                    <img src="/resurse/imagini/organizatoare/rollbox/rollbox_tip1/rollbox1_1.png" alt="briose">
                     <figcaption>Rollbox</figcaption>
                 </figure>
                 <figure  id="fig3" class="fg-img">
-                    <img src="resurse/imagini/scaune/scaune_birou/scaun_birou_tip1/scaun_birou_tip1_1.png" alt="Scaun rotativ birou">
+                    <img src="/resurse/imagini/scaune/scaune_birou/scaun_birou_tip1/scaun_birou_tip1_1.png" alt="Scaun rotativ birou">
                     <figcaption>Scaun directorial din catifea albastra</figcaption>
                 </figure>
                 <section id="produse">
                     <figure>
                         <picture>
                             <!-- ia prima imagine care se potriveste cu query-ul din media-->
-                            <source srcset="resurse/imagini/scaune/scaun_protocol/scaun_protocol1_s.png" media="(max-width:600px)" alt="scaune protocol pentru birouri">
-                            <source srcset="resurse/imagini/scaune/scaun_protocol/scaun_protocol1_m.png" alt="scaune protocol pentru birouri" media="(max-width:1000px)" >
-                            <img src="resurse/imagini/scaune/scaun_protocol/scaun_protocol1_m.png" alt="scaune protocol pentru birouri">
+                            <source srcset="/resurse/imagini/scaune/scaun_protocol/scaun_protocol1_s.png" media="(max-width:600px)" alt="scaune protocol pentru birouri">
+                            <source srcset="/resurse/imagini/scaune/scaun_protocol/scaun_protocol1_m.png" alt="scaune protocol pentru birouri" media="(max-width:1000px)" >
+                            <img src="/resurse/imagini/scaune/scaun_protocol/scaun_protocol1_m.png" alt="scaune protocol pentru birouri">
                         </picture>
                         <figcaption>Scaune de protocol din lemn masiv cu tapiserie din catifea</figcaption>
                     </figure>
@@ -433,7 +440,15 @@
                     </div>
                     <br>
                     <br>
-                    <a href="resurse/imagini/scaun_protocol/scaun_protocol2.png" download="scaunel">Link download imagine scaun</a>
+                    <a href="/resurse/imagini/scaun_protocol/scaun_protocol2.png" download="scaunel">Link download imagine scaun</a>
+                    
+                    <video width="320" height="240" controls="controls">
+                        <source src="/resurse/video/birou1.mp4" type="video/mp4">
+                        <source src="/resurse/video/birou1.ogv" type="video/ogv">
+                        <track default src="/resurse/video/tracks/mesaj_ro.vtt" kind="captions" srclang="ro" label="romana" />
+                        <track default src="mesaj_en.vtt" kind="captions" srclang="en" label="engleza" />
+                    </video>
+                
                 </section>
                 <section id="faq">
                     <h2>FAQ</h2>
@@ -443,7 +458,14 @@
                     <br>
                     <br>
 
-                </section>                
+                </section> 
+                
+                <%- include("../fragmente/galerie-statica.ejs") %>
+                <!-- <div id="ultimul-produs-vizualizat" style="display: none;">
+
+
+                </div> -->
+               
             </div>
 
         

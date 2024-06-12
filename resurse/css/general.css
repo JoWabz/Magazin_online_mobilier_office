@@ -127,4 +127,43 @@ body{
     border-right: 0.9rem solid transparent;
     
 }
+/* 
+.stylized-hr {
+    border: none;
+    height: 20px; /* înălțimea dorită pentru hr */
+    background-image: 
+        linear-gradient(45deg, var(--culoare-c1) 25%, transparent 25%), 
+        linear-gradient(-45deg,var(--culoare-c1) 25%, transparent 25%);
+    background-size: 20px 20px; /* dimensiunea săgeților */
+    background-position: 
+        0 0, 
+        0 10px; /* a doua imagine este poziționată mai jos */
+    background-repeat: repeat-x; /* Se repetă doar pe orizontală */
+    
+     */
+
+    .stylized-hr {
+        border: none;
+        height: 20px; /* Înălțimea liniei de săgețele */
+        background: repeating-linear-gradient(
+            45deg,
+            #3498db, /* Culoarea săgeților */
+            #3498db 10px, /* Dimensiunea săgeților */
+            transparent 10px,
+            transparent 20px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            #3498db, /* Culoarea săgeților */
+            #3498db 10px, /* Dimensiunea săgeților */
+            transparent 10px,
+            transparent 20px
+        );
+        background-size: 20px 20px; /* Dimensiunea modelului de săgețele */
+        background-position: 
+            0 0,
+            0 10px; /* A doua imagine este poziționată mai jos */
+        background-repeat: repeat-x; /* Se repetă doar pe orizontală */
+    }
+    
 
