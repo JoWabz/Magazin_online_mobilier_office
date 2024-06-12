@@ -1,10 +1,4 @@
-  ::cue{
-    background: blue;
-    font-style:italic;
-    color: white;
-  }
-
-  WEBVTT - mesaj_ro
+  WEBVTT
 
   00:00:000 --> 00:03.000 align:start
   un birou frumos
